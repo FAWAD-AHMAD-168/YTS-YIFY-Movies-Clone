@@ -5,6 +5,7 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
@@ -202,15 +203,6 @@
   .top-4 {
     top: calc(var(--spacing) * 4);
   }
-  .right-1 {
-    right: calc(var(--spacing) * 1);
-  }
-  .right-7 {
-    right: calc(var(--spacing) * 7);
-  }
-  .right-10 {
-    right: calc(var(--spacing) * 10);
-  }
   .right-15 {
     right: calc(var(--spacing) * 15);
   }
@@ -231,9 +223,6 @@
     @media (width >= 96rem) {
       max-width: 96rem;
     }
-  }
-  .m-12 {
-    margin: calc(var(--spacing) * 12);
   }
   .mx-auto {
     margin-inline: auto;
@@ -268,9 +257,6 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .mb-12 {
-    margin-bottom: calc(var(--spacing) * 12);
-  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
@@ -292,26 +278,20 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
   .h-4 {
     height: calc(var(--spacing) * 4);
-  }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
   }
   .h-\[4rem\] {
     height: 4rem;
@@ -346,9 +326,6 @@
   .w-\[190px\] {
     width: 190px;
   }
-  .w-\[200p\] {
-    width: 200p;
-  }
   .w-\[200px\] {
     width: 200px;
   }
@@ -360,9 +337,6 @@
   }
   .-rotate-45 {
     rotate: calc(45deg * -1);
-  }
-  .rotate-45 {
-    rotate: 45deg;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -451,20 +425,23 @@
   .bg-\[\#2d2d2c\] {
     background-color: #2d2d2c;
   }
+  .bg-\[\#3d3d3c\] {
+    background-color: #3d3d3c;
+  }
   .bg-\[\#6AC045\] {
     background-color: #6AC045;
   }
   .bg-\[\#262625\] {
     background-color: #262625;
   }
+  .bg-\[\#272725\] {
+    background-color: #272725;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
   .bg-blue-900 {
     background-color: var(--color-blue-900);
-  }
-  .bg-gray-900 {
-    background-color: var(--color-gray-900);
   }
   .bg-red-600 {
     background-color: var(--color-red-600);
@@ -514,6 +491,9 @@
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
   }
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
   }
@@ -522,6 +502,12 @@
   }
   .text-center {
     text-align: center;
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .font-serif {
+    font-family: var(--font-serif);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -562,6 +548,9 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
+  .text-wrap {
+    text-wrap: wrap;
+  }
   .text-ellipsis {
     text-overflow: ellipsis;
   }
@@ -598,6 +587,9 @@
   .text-white {
     color: var(--color-white);
   }
+  .italic {
+    font-style: italic;
+  }
   .underline {
     text-decoration-line: underline;
   }
@@ -616,10 +608,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .duration-100 {
-    --tw-duration: 100ms;
-    transition-duration: 100ms;
-  }
   .duration-200 {
     --tw-duration: 200ms;
     transition-duration: 200ms;
@@ -631,14 +619,6 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
-  }
-  .duration-1000 {
-    --tw-duration: 1000ms;
-    transition-duration: 1000ms;
-  }
-  .duration-2500 {
-    --tw-duration: 2500ms;
-    transition-duration: 2500ms;
   }
   .outline-none {
     --tw-outline-style: none;

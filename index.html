@@ -19,65 +19,103 @@
             overflow-x:hidden;
         
         }
+
+     
+        
+        
     </style>
 </head>
 
 <body>
 
     <!-- Header-->
-    <header class=" fixed z-1000  h-[4rem] w-full bg-[#1e1e1f] flex justify-center  gap-20   ">
+    <header class=" fixed z-1000  h-[4rem] w-full bg-[#1e1e1f] flex justify-center  gap-2   ">
+
+
+        <nav  class=" mx-aut0  flex gap-30 justify-center items-center "> 
 
         <!-- logo   -->
 
 
 
-        <div class="flex gap-30 justify-center items-center ml-20 ">
-
+       
 
             <div>
                 <a href="#"> <img src="/images/logo-YTS.svg" </a>
-
             </div>
 
-            <div>
-                <div class="border-2 border-gray-500 rounded-full flex gap-2 justify-center items-center">
-
-                    <i class=" text-gray-500 ml-3 fas fa-search overflow-hidden"></i>
-                    <input
-                        class=" outline-none  text-sm font-bold text-gray-500   caret-gray-500    placeholder:text-gray-500  placeholder:text-sm  rounded-full px-2 py-1"
-                        type="text" placeholder="Quick Search" />
-
-                </div>
-
-            </div>
-
-
-        </div>
+          
+       
 
 
 
         <!-- nav-links -->
 
-        <nav class="flex items-center  ">
-            <div class="flex gap-6 text-sm">
+        <div class="flex items-center [@media(max-width:850px)]:hidden ">
 
-                <a class=" font-bold text-gray-500 hover:text-white transition-all duration-200" href="#"> Home</a>
-                <a class="text-[#6af54e] font-bold" href="#"> 4K</a>
 
-                <a class="font-bold text-gray-500 hover:text-white transition-all duration-200" href="#"> Trending </a>
-                <a class="font-bold text-gray-500 hover:text-white transition-all duration-200" href="#">
-                    <span>Browse</span> <span>Movies</span>
-                </a>
-            </div>
+             <div class="border-2 border-gray-500 rounded-full flex gap-2 
+             justify-center items-center [@media(max-width:1072px)]:hidden " >
 
-            <div class="flex gap-2 ml-10 text-sm">
+                    <i class=" text-gray-500 ml-3 fas fa-search overflow-hidden"></i>
+                    <input
+                        class=" outline-none  text-sm font-bold text-gray-500   caret-gray-500
+                            placeholder:text-gray-500  placeholder:text-sm  rounded-full px-2 py-1 
+                            "
+                        type="text" placeholder="Quick Search" />
+
+                </div>
+
+                <div class="hidden justify-center items-center mr-1 [@media(max-width:1072px)]:flex"> 
+
+                    <i class="  text-gray-500 ml-3 fas fa-search 
+                    overflow-hidden hover:text-white transition-all duration-300 "> </i> 
+
+                 </div>
+
+
+
+            <ul class="flex gap-4 text-sm">
+
+                <li><a class=" font-bold text-gray-500 hover:text-white transition-all duration-200" href="#"> Home</a> </li>
+                 <li><a class="text-[#6af54e] font-bold" href="#"> 4K</a></li>
+
+                 <li><a class="font-bold text-gray-500 hover:text-white transition-all duration-200" href="#"> Trending </a></li>
+                 <li><a class="font-bold text-gray-500 hover:text-white transition-all duration-200" href="#">
+                   Browse Movies
+                </a> </li>
+            </ul>
+
+            <div class="flex gap-2 ml-10 text-sm mr-5">
                 <a class="font-bold text-white hover:text-gray-400 transition-all duration-200" href="#">Login</a>
 
                 <div class="font-bold text-white hover:text-gray-500 transition-all duration-200" class="h-4 w-1">|
                 </div>
                 <a class="font-bold text-white hover:text-gray-500 transition-all duration-200" href="#">Register</a>
             </div>
+        </div>
+
+
+
+        <!-- MOBILE MENU -->
+           
+
+
+        <div class="hidden  text-2xl [@media(max-width:850px)]:flex gap-4"> 
+            <a href="#ytslinks"><i class="fa-solid fa-magnifying-glass text-white"></i></a>
+            <a href="#ytslinks" class="font-bold text-[#6AC045]">4K</a>
+            
+            <a href="#ytslinks"><i class="fa-solid fa-magnifying-glass text-white"></i></a>
+            <a href="#ytslinks"><i class="fa-solid fa-magnifying-glass text-white"></i></a>
+
+
+
+
+        </div>
+
         </nav>
+
+
     </header>
 
 
@@ -173,7 +211,7 @@
     
             <!-- Cards container -->
     
-            <div class="grid grid-cols-4 mx-auto mt-3  gap-8 p-6 w-[80%] ">
+            <div class=" w-[80%] mx-auto grid [@media(max-width:600px)]:grid-cols-1 grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center mt-3  gap-8 p-6   ">
     
                 <!-- Card 1 -->
     
@@ -372,8 +410,8 @@
 
         <!-- CARDS CONTAINER -->
 
-        <div class="w-[80%] bg-[#2d2d2c] grid grid-cols-4 gap-4  place-items-center 
-            mx-auto pt-6 ">
+        <div class="w-[80%] mx-auto grid [@media(max-width:600px)]:grid-cols-1   grid-cols-2 md:grid-cols-2
+         lg:grid-cols-3 xl:grid-cols-4 place-items-center mt-3  gap-8 p-6    ">
 
 
             <!-- CARD 1 -->
@@ -381,7 +419,7 @@
             <div>
 
                 <div
-                    class="relative h-[315px] w-[200px] cursor-pointer border-4 border-white rounded-sm group hover:border-[#6AC045] overflow-hidden transition-all duration-300">
+                    class="relative h-[315px] w-[200px]    cursor-pointer border-4 border-white rounded-sm group hover:border-[#6AC045] overflow-hidden transition-all duration-300">
                     <img src="/images/hits/chichore.jpg" alt=""
                         class="w-full h-full object-cover group-hover:opacity-55 transition-all duration-300 " />
                     <div
@@ -539,7 +577,7 @@
             <div>
 
                 <div
-                    class="relative h-[315px] w-[200px] cursor-pointer border-4 border-white rounded-sm group hover:border-[#6AC045] overflow-hidden transition-all duration-300">
+                    class="relative h-[315px] w-[200px]  cursor-pointer border-4 border-white rounded-sm group hover:border-[#6AC045] overflow-hidden transition-all duration-300">
                     <img src="/images/hits/jj.jpg" alt=""
                         class="w-full h-full object-cover group-hover:opacity-55 transition-all duration-300 " />
                     <div
@@ -1038,8 +1076,8 @@
 
         <!-- CARDS CONTAINER -->
 
-        <div class="w-[80%] bg-[#272725] grid grid-cols-4 gap-4  place-items-center 
-            mx-auto pt-6 ">
+        <div class="w-[80%] mx-auto grid [@media(max-width:600px)]:grid-cols-1   grid-cols-2 md:grid-cols-2
+         lg:grid-cols-3 xl:grid-cols-4 place-items-center mt-3  gap-8 p-6  ">
 
 
             <!-- CARD 1 -->
@@ -1385,8 +1423,8 @@
 
         <!-- CARDS CONTAINER -->
 
-        <div class="w-[80%] bg-[#282727] grid grid-cols-4 gap-4  place-items-center 
-            mx-auto pt-6 ">
+        <div class="w-[80%] mx-auto grid [@media(max-width:600px)]:grid-cols-1   grid-cols-2 md:grid-cols-2
+         lg:grid-cols-3 xl:grid-cols-4 place-items-center mt-3  gap-8 p-6  ">
 
 
             <!-- CARD 1 -->

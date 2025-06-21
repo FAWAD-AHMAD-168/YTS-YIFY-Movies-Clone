@@ -6,7 +6,7 @@ A fully responsive frontend clone of the official **YTS YIFY Movies Torrent Down
 
 ## 🌐 Live Preview
 
-[Live Preview👉:](https://yts-yifymovies.netlify.app/)
+[Click Here For Live Preview:](https://yts-yifymovies.netlify.app/)
 
 ---
 
@@ -63,7 +63,7 @@ This project was developed as part of a personal learning initiative to:
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Add search/filter functionality using JavaScript
 - Add pagination or dynamic loading

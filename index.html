@@ -32,7 +32,7 @@
     <header class="fixed z-1000  h-[3.5rem] w-full bg-[#1e1e1f] flex justify-center items-center gap-2  ">
 
 
-        <nav  class="flex gap-30 [@media(max-width:560px)]:gap-15  "> 
+        <nav  class="flex justify-center items-center gap-30 [@media(max-width:560px)]:gap-15  "> 
 
         <!-- logo   -->
 
@@ -121,6 +121,8 @@
 
     <!--HOMEPAGE WITH some social page  LINKS -->
     <section class="  relative pt-25  w-[100vw] bg-[#262625] ">
+
+        <div class="[@media(max-width:768px)]:hidden"> 
         <h1 class="  text-center text-white font-bold text-5xl ">Download YTS YIFY movies: HD smallest size</h1>
         <p class="relative mx-auto  text-gray-300  text-center  w-[60%] mt-6 ">Welcome to the official <b>YTS.MX</b>
             website. Here you can browse and download YIFY
@@ -129,15 +131,18 @@
         <a href="#" class=" block font-bold  text-center text-blue-400 hover:opacity-75 transition-all duration-200 ">
             IMPORTANT - YTS.MX is the only new official domain for YIFY Movies</a>
 
+            </div>
+
 
         <!-- LINKS FOR TELGRAM AND TWITTER-->
 
 
-        <div class="flex gap-2 text-white  justify-center mt-4">
+        <div class="flex gap-2 flex-wrap text-white  justify-center items-center mt-4
+         [@media(max-width:768px)]:text-base   [@media(max-width:768px)]:-mt-4  ">
 
             <div class="flex gap-1 ">
                 <img class="h-6 w-6 " src="/images/telegram.svg" alt="telegram">
-                <a class="text-blue-400 hover:opacity-55 transition-all duration-200" href="telegram">
+                <a class="text-blue-400  hover:opacity-55 transition-all duration-200 [@media(max-width:410px)]:text-sm" href="telegram">
                     @YTSMX_UPDATES</a>
             </div>
 
@@ -147,7 +152,7 @@
 
             <div class="flex gap-1">
                 <img class="h-6 w-6 " src="/images/twitter.svg" alt="telegram">
-                <a class="text-blue-400 hover:opacity-55 transition-all duration-200" href="twiter">Follow
+                <a class="text-blue-400 hover:opacity-55 transition-all duration-200 [@media(max-width:410px)]:text-sm" href="twiter">Follow
                     <b>@YTSYIFY</b> for upcoming featured movies!</a>
             </div>
 
@@ -157,7 +162,7 @@
 
             <div class="flex gap-1">
                 <img class="h-6 w-6  " src="/images/mastodon.svg" alt="telegram">
-                <a class="text-blue-400 hover:opacity-55 transition-all duration-200" href="mastodon">@ytsyify</a>
+                <a class="text-blue-400 hover:opacity-55 transition-all duration-200 [@media(max-width:410px)]:text-sm" href="mastodon">@ytsyify</a>
             </div>
 
         </div>
@@ -165,9 +170,9 @@
 
         <!--Popular and more featured movies  -->
 
-        <div class="  flex justify-center gap-20   mt-8 ">
+        <div class="  flex justify-center items-center gap-20   mt-8 [@media(max-width:410px)]:gap-5 [@media(max-width:370px)]:flex-col [@media(max-width:370px)]:gap- ">
 
-            <div class="flex  gap-">
+            <div class="flex  gap-1">
                 <i class="fa-solid fa-star text-[#6af54e] h-6 w-6 "></i>
                 <p class="text-white font-bold"> Popular Downloads </p>
 
